@@ -25,9 +25,7 @@ public class Student {
     }
 
     public void addGrade(int grade) {
-        if (grade < 2 || grade > 5) {
-            throw new IllegalArgumentException(grade + " is wrong grade");
-        }
+        if (grade < 2 || grade > 5) {throw new IllegalArgumentException(grade + " is wrong grade");}
         grades.add(grade);
     }
 
